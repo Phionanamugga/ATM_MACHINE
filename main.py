@@ -18,5 +18,8 @@ def authenticate():
         if pin in blocked_users:
             print('Your account has been blocked. Please contact customer service')
             return None
-         
+        if pin in users:
+            print('Authentication successful')
+            return pin
+        
        
