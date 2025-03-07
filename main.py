@@ -54,4 +54,9 @@ def menu():
     print('5. Change PIN')
     print('6. Exit')
     return input('Select an option: ')
+
+# check balance function
+def check_balance(user_pin):
+    print(f'Your account balance is: {users[user_pin]["balance"]}')
+    return True
        
