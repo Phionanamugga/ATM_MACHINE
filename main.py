@@ -29,6 +29,7 @@ def authenticate():
     blocked_users.add(pin)
     return None
 
+
 # Function for login
 def login():
     print('Welcome to the ATM')
@@ -42,7 +43,6 @@ def login():
         print('Login successful')
         return pin
     else:
-        print('Invalid PIN')
-        
+        print('Invalid PIN')        
         
        
