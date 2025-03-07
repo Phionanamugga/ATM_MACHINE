@@ -7,4 +7,5 @@ users = {
     '3456': { 'balance': 400000, 'transactions': [] }
 }   
        
- 
+ # Initialize block users
+blocked_users = set()
