@@ -45,4 +45,13 @@ def login():
     else:
         print('Invalid PIN')        
         
+# function to display the menu
+def menu():
+    print('1. Withdrawal')
+    print('2. Deposit')
+    print('3. Complaint')
+    print('4. Check balance')
+    print('5. Change PIN')
+    print('6. Exit')
+    return input('Select an option: ')
        
