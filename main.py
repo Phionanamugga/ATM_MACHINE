@@ -59,4 +59,26 @@ def menu():
 def check_balance(user_pin):
     print(f'Your account balance is: {users[user_pin]["balance"]}')
     return True
-       
+
+# function deposit money
+def deposit(user_pin):
+    amount = int(input('Enter amount to deposit: '))
+    if amount > 0:
+        users[user_pin]['balance'] += amount
+        users[user_pin]['transactions'].append(f'You deposited {amount}')
+        print(f'Your new balance is: {users[user_pin]["balance"]}')
+    else:
+        print('Invalid amount')
+
+# function to withdraw money
+def withdraw(user_pin):
+    amount = int(input('Enter amount to withdraw: '))
+    if amount > 0:
+        if amount <= users[user_pin]['balance']:
+            users[user_pin]['balance'] -= amount
+            users[user_pin]['transactions'].append(f'You withdrew {amount}')
+            print(f'Your new balance is: {users[user_pin]["balance"]}')
+        else:
+            print('Insufficient funds')
+    else:
+        print('Invalid amount')      
