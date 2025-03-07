@@ -9,3 +9,10 @@ users = {
        
  # Initialize block users
 blocked_users = set()
+
+# Function for authentication of users
+def authenticate():
+    attempts=3
+    while attempts > 0:
+        pin = input('Enter your 4-digit PIN: ')
+       
