@@ -21,5 +21,28 @@ def authenticate():
         if pin in users:
             print('Authentication successful')
             return pin
+        else:
+            attempts = 2
+            print('Invalid PIN. 1 attempt left')
+
+    print('Too many failed attempts. Your account has been blocked')
+    blocked_users.add(pin)
+    return None
+
+# Function for login
+def login():
+    print('Welcome to the ATM')
+    print('******************')
+    print('Enter your 4-digit PIN')
+    pin = input('>>> ')
+    if pin in users:
+        if pin in blocked_users:
+            print('Your account has been blocked. Please contact customer service')
+            return False
+        print('Login successful')
+        return pin
+    else:
+        print('Invalid PIN')
+        
         
        
