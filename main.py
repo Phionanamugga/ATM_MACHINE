@@ -15,4 +15,8 @@ def authenticate():
     attempts=3
     while attempts > 0:
         pin = input('Enter your 4-digit PIN: ')
+        if pin in blocked_users:
+            print('Your account has been blocked. Please contact customer service')
+            return None
+         
        
