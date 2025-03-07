@@ -1,11 +1,10 @@
-student_scores = {
-    "Harry" : 81,
-    "Ron" : 79,
-    "Hermione" : 99 ,
-    "Draco" : 74 ,
-    "Neville" : 62
-}
-#don't change the code above
-# create an empty dictionary called student_grades
-# add student grades to the dictionary
-# print student_grades
+import time
+
+# Users account details with PIN and balance
+users = {
+    '1234': { 'balance': 300000, 'transactions': [] },
+    '5678': { 'balance':100000, 'transactions': [] },
+    '3456': { 'balance': 400000, 'transactions': [] }
+}   
+       
+ 
