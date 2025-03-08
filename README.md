@@ -27,12 +27,12 @@ Git: 2.40+ for version control
 
 ## Quick Start🚀 
 1. Clone the Repository
-git clone https://github.com/yourusername/atm-web-app.git
+git clone https://github.com/Phionanamugga/atm-web-app.git
 cd atm-web-app
 
 2. Set Up Virtual Environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv/Scripts/activate
 
 3. Install Dependencies
 pip install -r requirements.txt
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 4. Run the Application
 python atm_server.py
-Open your browser to http://localhost:5000.
+Open your browser to http://localhost:5004.
 
 ## Project Structure🏗️ 
 atm-web-app/
