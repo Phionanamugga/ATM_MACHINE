@@ -72,8 +72,8 @@ Build the Docker Image
 docker build -t atm-web-app:latest .
 
 ### Run the Container
-docker run -d -p 5000:5000 atm-web-app:latest
-Access at http://localhost:5000.
+docker run -d -p 5004:5004 atm-web-app:latest
+Access at http://localhost:5004.
 Dockerfile
 
 dockerfile
@@ -83,8 +83,8 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install -r requirements.txt
-EXPOSE 5000
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "atm_server:app"]
+EXPOSE 5004
+CMD ["gunicorn", "--bind", "0.0.0.0:5004", "main:app"]
 
 ## API Endpoints🌐 
 Endpoint	Method	Description	Request Body	Response Example
